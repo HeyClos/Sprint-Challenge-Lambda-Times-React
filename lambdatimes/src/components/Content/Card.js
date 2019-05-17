@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from '../../../node_modules/prop-types'
 
 const Card = props => {
   return (
@@ -14,6 +15,8 @@ const Card = props => {
   );
 };
 
+// Make sure to include PropTypes.
+
 Card.proptypes = {
   card: PropTypes.shape({
     headline: PropTypes.string,
@@ -22,7 +25,5 @@ Card.proptypes = {
     author: PropTypes.string
   })
 }
-
-// Make sure to include PropTypes.
 
 export default Card;

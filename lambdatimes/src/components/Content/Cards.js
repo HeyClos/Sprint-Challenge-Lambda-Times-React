@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import PropTypes from 'prop-types'
+import PropTypes from '../../../node_modules/prop-types'
 
 const Cards = props => {
   //console.log(props.cards)
@@ -17,7 +17,7 @@ const Cards = props => {
 
 // Make sure you include prop types for all of your incoming props
 Cards.proptypes = {
-  card: PropTypes.shape({
+  cards: PropTypes.shape({
     headline: PropTypes.string,
     tab: PropTypes.string,
     img: PropTypes.string,
