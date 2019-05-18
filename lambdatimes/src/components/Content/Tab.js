@@ -8,16 +8,16 @@ const Tab = props => {
   // if (props.tab === props.selectedTab){
   //   className = 'tab active-tab'
   // } else {className = 'tab'}
-  let isSelected = "tab"
-  if (props.tab === props.selectedTab) {
-    isSelected = "tab active-tab"
-  } else {
-    isSelected = "tab"
-  }
+  const isActive = props.tab === props.selectedTab;
+  // let isSelected = "tab"
+  // if (props.tab === props.selectedTab) {
+  //   isSelected = "tab active-tab"
+  // } else {
+  //   isSelected = "tab"
 
   return (
     <div
-      className={isSelected}
+      className={`tab ${isActive ? "active-tab":""}`}
       onClick={() => props.selectTabHandler(props.tab)
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
@@ -31,7 +31,9 @@ const Tab = props => {
 
 // Make sure you include PropTypes on your props.
 Tab.proptypes = {
-  tab: PropTypes.arrayOf(PropTypes.string)
+  tab: PropTypes.arrayOf(PropTypes.string),
+  selectTabHandler: PropTypes.func,
+  selectedTab: PropTypes.string
 }
 
 
