@@ -8,11 +8,12 @@ flex-direction: row;
 flex: 1;
 font-size: 11px;
 
-span { 
-    cursor: pointer;
-    margin-right: 25%;
-    font-weight: bold;
-    }
+
 `;
+// span { 
+//     cursor: pointer;
+//     margin-right: 25%;
+//     font-weight: bold;
+//     }
 
 export default TopBarContainerLeft; 

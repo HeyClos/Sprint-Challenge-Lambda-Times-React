@@ -9,11 +9,11 @@ const TopBarContainerRight = styled.div`
     font-size: 11px;
     font-weight: bold;
 
-span {
-    cursor: pointer;
-    margin-right: 25%;
-    font-weight: bold;
-    }
 `;
+// span {
+//     cursor: pointer;
+//     margin-right: 25%;
+//     font-weight: bold;
+//     }
 
 export default TopBarContainerRight; 

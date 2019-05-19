@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import StyledTopbar from './StyledComponents/StyledTopBar'
 import TopBarContainer from './StyledComponents/TopBarContainer'
 import TopBarContainerLeft from './StyledComponents/TopBarContainerLeft'
 import TopBarContainerCenter from './StyledComponents/TopBarContainerCenter'
 import TopBarContainerRight from './StyledComponents/TopBarContainerRight'
+import SpanLeft from './StyledComponents/SpanLeft'
+import SpanRight from './StyledComponents/SpanRight'
+import SpanCenter from './StyledComponents/SpanCenter'
 
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
@@ -88,7 +90,7 @@ const TopBar = () => {
           <span>TOPICS</span><span>SEARCH</span>
         </TopBarContainerLeft>
         <TopBarContainerCenter>
-          <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
+          <SpanLeft>GENERAL</SpanLeft><SpanCenter>BROWNBAG</SpanCenter><SpanCenter>RANDOM</SpanCenter><SpanCenter>MUSIC</SpanCenter><SpanRight>ANNOUNCEMENTS</SpanRight>
         </TopBarContainerCenter>
         <TopBarContainerRight>
           <span>LOG IN</span>
